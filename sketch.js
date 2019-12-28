@@ -15,7 +15,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    
+    platform=new Ground(200,400,100,100);
     ground = new Ground(600,height,1200,20)
 
     box1 = new Box(700,320,70,70);
@@ -49,6 +49,7 @@ function draw(){
     pig1.display();
     log1.display();
 
+    platform.display();
     box3.display();
     box4.display();
     pig3.display();
